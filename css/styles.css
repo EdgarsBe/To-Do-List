@@ -1,0 +1,16 @@
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 45px;
+    font-family: 'Anton', sans-serif;
+}
+body {
+    background-color: rgb(203, 241, 238)
+}
+#Virsraksta_fons {
+    background-color:rgb(179, 234, 248) ;
+    border: black solid 3px;
+    border-radius: 50px;
+    width: 380px;
+    margin: auto;
+}
