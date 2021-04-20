@@ -2,6 +2,7 @@ h1 {
     display: flex;
     justify-content: center;
     font-size: 45px;
+    color: rgb(2, 77, 102);
     font-family: 'Anton', sans-serif;
 }
 body {
@@ -9,8 +10,28 @@ body {
 }
 #Virsraksta_fons {
     background-color:rgb(179, 234, 248) ;
-    border: black solid 3px;
-    border-radius: 50px;
+    border: rgb(138, 228, 240) solid 3px;
+    border-radius: 25px;
     width: 380px;
     margin: auto;
+}
+#poga{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+#Jauns_uzd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Anton', sans-serif;
+    font-size: 20px;
+    color:rgb(9, 70, 90);
+    background-color: rgb(104, 218, 174);
+    border-radius: 15px;
+    border: rgb(86, 231, 171) solid 3px;
+}
+#Pop_up{
+    display: none;
 }
