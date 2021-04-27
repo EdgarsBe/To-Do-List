@@ -2,19 +2,16 @@ h1 {
     display: flex;
     justify-content: center;
     font-size: 45px;
-    color: rgb(2, 77, 102);
+    color: rgb(255, 255, 255);
     font-family: 'Anton', sans-serif;
 }
 body {
-    background-color: rgb(203, 241, 238)
+    background: url(../board.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
-#Virsraksta_fons {
-    background-color:rgb(179, 234, 248) ;
-    border: rgb(138, 228, 240) solid 3px;
-    border-radius: 25px;
-    width: 380px;
-    margin: auto;
-}
+
 #poga{
     display: flex;
     justify-content: center;
