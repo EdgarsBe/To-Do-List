@@ -45,7 +45,7 @@ function render() {
     for(let i = 1; i < Uzdevumi.length; i++) {
         let uzd = `
         <li class="uzdevums">
-            <img id='pin' src='pin.png' alt='pin'>
+            <img id='pin' src='images/pin.png' alt='pin'>
             <h3>Uzdevums: ${Uzdevumi[i].Uzdevums}</h3>
             <h4>Termiņš: ${Uzdevumi[i].Termiņš}</h4>
             <button class="edit">Edit</button>
