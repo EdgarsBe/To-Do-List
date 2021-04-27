@@ -49,7 +49,7 @@ body {
     margin: 15% auto;
     padding: 20px;
     border: 1px solid rgb(108, 233, 181);
-    width: 25%;
+    width: 100%;
 }
 
 #Darbi {
@@ -63,13 +63,12 @@ body {
 .uzdevums {
     padding: 10px;
     margin: 10px;
+    background-color: rgb(235, 252, 160);
     overflow-wrap: break-word ;
-    background-color: rgb(238, 228, 137);
     font-family: 'Original Surfer', cursive;
 }
 
 #pin {
     width: 20px;
-    display: flex;
-    justify-content: center;
+
 }

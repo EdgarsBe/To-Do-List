@@ -6,9 +6,22 @@ window.addEventListener('load', () => {
     console.log(Uzdevumi);
     render();
 });
-//Izveido random krāsu
+//Izdzēš lapiņas
+const list = document.querySelector('#Darbi')
 
- 
+list.addEventListener('click', (e) => {
+    if(e.target.className == 'del'){
+      const li = e.target.parentElement;
+      li.parentNode.removeChild(li);
+      Uzdevumi.splice(li, 1);
+      localStorage.setItem('Uzdevumi',JSON.stringify(Uzdevumi));
+    }
+  });
+
+//Izlabo lapiņas
+
+//Izvēlas krāsu
+
 //Parāda un paslēpj form1.
 document.getElementById('Jauns_uzd').addEventListener('click', () => {
     POP_UP.style.display = 'block';
@@ -31,13 +44,13 @@ function render() {
 
     for(let i = 1; i < Uzdevumi.length; i++) {
         let uzd = `
-        <div class="uzdevums">
+        <li class="uzdevums">
             <img id='pin' src='pin.png' alt='pin'>
             <h3>Uzdevums: ${Uzdevumi[i].Uzdevums}</h3>
             <h4>Termiņš: ${Uzdevumi[i].Termiņš}</h4>
-            <button>Edit</button>
-            <button>Delete</button>
-        </div>`;
+            <button class="edit">Edit</button>
+            <button class="del">Delete</button>
+        </li>`;
 
         Darbi.innerHTML += uzd;
     }
