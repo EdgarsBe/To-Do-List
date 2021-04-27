@@ -42,6 +42,9 @@ body {
     font-size: 30px;
 }
 #form1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: rgb(182, 252, 237);
     margin: 15% auto;
     padding: 20px;
